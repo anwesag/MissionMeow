@@ -54,7 +54,7 @@ func _physics_process(_delta):
 		die()
 	if not target_detected:
 		player.health_drop_rate = -10
-		navigate_to_location(Vector2(450.0, 100.0))
+		navigate_to_location(Vector2(375.0, 125.0))
 	
 	move_and_slide()
 	pick_new_state()
