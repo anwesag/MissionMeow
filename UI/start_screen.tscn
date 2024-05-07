@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3qi7k33phghi"]
+
+[ext_resource type="Script" path="res://UI/start_screen.gd" id="1_3b74p"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_3b74p")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 927.0
+offset_top = 571.0
+offset_right = -943.0
+offset_bottom = -468.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Start"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = 46.0
+offset_right = -62.0
+offset_bottom = -932.0
+theme_override_font_sizes/font_size = 11
+text = "Welcome to Mission Meow!
+Your mission: Get to the milk to knock it over before Mom and Dad catch you! Use the AWSD keys to move around, press P to poop (mom and dad HATE that), and press M to meow! 
+Helpful tip: if you get too sleepy, pets from baby will always make you feel better :)"
+horizontal_alignment = 1
+autowrap_mode = 2
+max_lines_visible = 50
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

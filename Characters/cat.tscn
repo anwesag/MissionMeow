@@ -1,8 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://roxmlsmybe8w"]
+[gd_scene load_steps=30 format=3 uid="uid://roxmlsmybe8w"]
 
 [ext_resource type="Script" path="res://Characters/cat.gd" id="1_507jf"]
 [ext_resource type="Texture2D" uid="uid://5bcq7vvppumv" path="res://Art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_d5r6v"]
 [ext_resource type="PackedScene" uid="uid://cspxv7w2rtpcc" path="res://UI/progress_bar.tscn" id="3_40313"]
+[ext_resource type="AudioStream" uid="uid://rm46ndvs7qc0" path="res://Art/mixkit-sweet-kitty-meow-93.wav" id="4_m5qv2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_scyvx"]
 size = Vector2(10, 6)
@@ -240,6 +241,7 @@ _data = {
 [node name="Cat" type="CharacterBody2D"]
 scale = Vector2(1, 1.00613)
 script = ExtResource("1_507jf")
+starting_direction = Vector2(0.07, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1, 0)
@@ -281,3 +283,6 @@ offset_left = 17.0
 offset_top = 19.0
 offset_right = 137.0
 offset_bottom = 23.0
+
+[node name="SoundMeow" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_m5qv2")

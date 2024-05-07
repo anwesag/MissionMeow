@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfbbeps7ue6nh"]
+
+[ext_resource type="Script" path="res://UI/poop_sprite.gd" id="1_fcl73"]
+[ext_resource type="Texture2D" uid="uid://crdwm305drcfb" path="res://Art/poop.png" id="2_tlkhq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m7osu"]
+size = Vector2(16, 17)
+
+[node name="poop_sprite" type="CharacterBody2D"]
+script = ExtResource("1_fcl73")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -3)
+scale = Vector2(0.0735632, 0.0722348)
+texture = ExtResource("2_tlkhq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -3.5)
+shape = SubResource("RectangleShape2D_m7osu")

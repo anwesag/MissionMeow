@@ -1611,9 +1611,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_lii8q")
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_8i8rt"]
-vertices = PackedVector2Array(794, 191, 791, 461, 734, 302, 733, 251, 681, 191, 683, 252, 542, 160, 601, 160, 600, 331, 542, 224, 175, 459, 175, 268, 222, 268, 222, 161, 392, 161, 393, 201, 445, 202, 445, 160, 488, 160, 489, 168, 489, 223, 636, 334, 637, 160, 680, 160, 682, 301)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 0, 3, 5), PackedInt32Array(6, 7, 8, 9), PackedInt32Array(10, 11, 12, 1), PackedInt32Array(12, 13, 14, 15), PackedInt32Array(1, 12, 15, 8), PackedInt32Array(16, 17, 18, 19, 20), PackedInt32Array(21, 22, 23, 4), PackedInt32Array(21, 4, 5, 24), PackedInt32Array(24, 2, 1, 21), PackedInt32Array(20, 9, 8), PackedInt32Array(8, 21, 1), PackedInt32Array(20, 8, 15, 16)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(165, 152, 165, 469, 801, 472, 805, 150)])
+vertices = PackedVector2Array(794, 191, 791, 462, 734, 302, 733, 251, 681, 191, 683, 252, 543, 159, 602, 159, 600, 331, 542, 224, 222, 268, 222, 158, 392, 158, 393, 201, 445, 202, 445, 158, 488, 158, 489, 168, 489, 223, 636, 334, 637, 159, 680, 159, 682, 301, 138, 158, 167, 158, 168, 268, 135, 464)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 0, 3, 5), PackedInt32Array(6, 7, 8, 9), PackedInt32Array(10, 11, 12, 13), PackedInt32Array(14, 15, 16, 17, 18), PackedInt32Array(19, 20, 21, 4), PackedInt32Array(19, 4, 5, 22), PackedInt32Array(23, 24, 25, 26), PackedInt32Array(1, 26, 25, 10), PackedInt32Array(1, 10, 13, 8), PackedInt32Array(22, 2, 1, 19), PackedInt32Array(18, 9, 8), PackedInt32Array(8, 19, 1), PackedInt32Array(18, 8, 13, 14)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(129, 148, 125, 475, 801, 472, 805, 150)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 
 [node name="GameLevel" type="Node2D"]
@@ -1630,7 +1630,7 @@ remote_path = NodePath("../../../Camera2D")
 
 [node name="DadSprite" parent="GameManager" instance=ExtResource("3_aqpeq")]
 y_sort_enabled = true
-position = Vector2(455, 79)
+position = Vector2(460, 87)
 
 [node name="MomSprite" parent="GameManager" instance=ExtResource("4_c8d7x")]
 position = Vector2(46, -1)
@@ -1666,24 +1666,19 @@ visible = false
 navigation_polygon = SubResource("NavigationPolygon_8i8rt")
 
 [node name="Polygon2D" type="Polygon2D" parent="NavigationRegion2D"]
-visible = false
 polygon = PackedVector2Array(612, 150, 610, 322, 626, 323, 628, 149)
 
 [node name="Polygon2D2" type="Polygon2D" parent="NavigationRegion2D"]
-visible = false
 position = Vector2(0, -128)
 polygon = PackedVector2Array(693, 390, 692, 419, 724, 420, 723, 389)
 
 [node name="Polygon2D3" type="Polygon2D" parent="NavigationRegion2D"]
-visible = false
 polygon = PackedVector2Array(499, 167, 499, 213, 532, 214, 533, 150, 498, 149)
 
 [node name="Polygon2D4" type="Polygon2D" parent="NavigationRegion2D"]
-visible = false
 polygon = PackedVector2Array(402, 149, 403, 191, 435, 192, 435, 150)
 
 [node name="Polygon2D5" type="Polygon2D" parent="NavigationRegion2D"]
-visible = false
 polygon = PackedVector2Array(178, 258, 212, 258, 212, 168, 177, 168)
 
 [node name="Polygon2D6" type="Polygon2D" parent="NavigationRegion2D"]

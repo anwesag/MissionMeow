@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi3r47ewuy1bg"]
+
+[ext_resource type="Script" path="res://UI/mission_success.gd" id="1_ag2kh"]
+
+[node name="game_over" type="CanvasLayer"]
+script = ExtResource("1_ag2kh")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 922.0
+offset_top = 550.0
+offset_right = -911.0
+offset_bottom = -507.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Mission Success!!!!"
+
+[node name="Retry" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 942.0
+offset_top = 591.0
+offset_right = -928.0
+offset_bottom = -458.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Retry"
+
+[connection signal="pressed" from="Retry" to="." method="_on_retry_pressed"]
